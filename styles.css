@@ -6,13 +6,20 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .special-txt {
   color: #e25c66;
+}
+.bg-main {
+  background-color: #D2EAF4;
 }
 .main {
   width: 100%;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 640px;
+  margin-bottom: 40px; /* delete */
 }
 .header {
   padding: 16px;
@@ -35,7 +42,7 @@ body {
   color: #9E9FA0;
   float: right;
   font-size: 14px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.4px; */
   padding-top: 10px;
 }
 .logo img {
@@ -53,7 +60,7 @@ body {
   background-color: #D2EAF4;
 }
 .txt-row {
-  padding: 0 30px;
+  padding: 0 40px;
 }
 p.txt {
   font-family: 'Open Sans', Helvetica, Arial,san-serif;
@@ -63,4 +70,59 @@ p.txt {
   text-align: center;
   font-weight: 400;
   margin-bottom: 5px;
+}
+.date {
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans',Helvetica, Arial,sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #e25c66;
+  font-weight: 400;
+  text-align: center;
+}
+.cta-btn {
+  /* padding-top: 40px; */
+  padding: 40px 50px 0 50px;
+  text-align: center;
+}
+.left-btn,
+.right-btn {
+  float: left;
+  background-color: #003b49;
+  border-radius: 12px;
+  /* padding: 10px 20px; */
+}
+.right-btn {
+  float: right;
+}
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Open Sans',Helvetica, Arial,sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  /* border-radius: 12px; */
+}
+.right-link {
+  padding: 10px 56px;
+}
+.discount-code {
+  margin-top: 35px;
+}
+.code {
+  font-size: 24px;
+  color: #e25c66;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.col-2-red {
+  background-color: #D80015;
+}
+.left {
+  height: 200px;
 }
