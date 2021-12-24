@@ -19,7 +19,6 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 640px;
-  margin-bottom: 40px; /* delete */
 }
 .header {
   padding: 16px;
@@ -42,7 +41,6 @@ a {
   color: #9E9FA0;
   float: right;
   font-size: 14px;
-  /* letter-spacing: 0.4px; */
   padding-top: 10px;
 }
 .logo img {
@@ -83,7 +81,6 @@ p.txt {
   text-align: center;
 }
 .cta-btn {
-  /* padding-top: 40px; */
   padding: 40px 50px 0 50px;
   text-align: center;
 }
@@ -92,7 +89,6 @@ p.txt {
   float: left;
   background-color: #003b49;
   border-radius: 12px;
-  /* padding: 10px 20px; */
 }
 .right-btn {
   float: right;
@@ -105,7 +101,6 @@ p.txt {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  /* border-radius: 12px; */
 }
 .right-link {
   padding: 10px 56px;
@@ -125,4 +120,33 @@ p.txt {
 }
 .left {
   height: 200px;
+}
+.col-row.sep {
+  margin: 0 auto;
+}
+.bottom-row-table {
+  padding: 25px;
+}
+.blue {
+  color: #00BCED;
+  font-weight: 700;
+  text-align: center;
+}
+.row {
+  display: inline;
+}
+.icons {
+  text-align: center;
+}
+.icon-img {
+  height: 30px;
+}
+.icon-img-app {
+  width: 96px;
+}
+.footer-txt {
+  color: #002D3F;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
