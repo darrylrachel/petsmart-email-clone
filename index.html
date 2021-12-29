@@ -7,7 +7,8 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="helper.css">
   <!--[if mso]>
     <style>
         table {border-collapse:collapse;border-spacing:0;border:none;margin:0;}
@@ -24,7 +25,6 @@
     <![endif]-->
   <style type=text/css>
     body {
-      background-color: aqua;
       font-family: 'Open Sans', Arial, Helvetica, sans-serif;
       margin: 0;
     }
@@ -39,6 +39,7 @@
       border: 0;
     }
     p {
+      font-size: 14px;
       margin: 0;
     }
     a {
@@ -52,7 +53,6 @@
     }
     .main {
       background-color: #fff;
-      border: 1px solid magenta;
       margin: 0 auto;
       width: 100%;
       max-width: 640px;
@@ -64,12 +64,18 @@
       background-color: #003B49;
       color: #FFFFFF;
       text-decoration: none;
-      /* padding: 15px 0; */
       border-radius: 12px;
       font-weight: 700;
       text-align: center;
       font-size: 16px;
       padding: 15px 20px;
+    }
+    .coupon {
+      color:#E35B67;
+      font-size: 24px;
+      font-weight:300;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     .two-columns {
       display: inline;
@@ -83,26 +89,82 @@
       padding-left:80px;
     }
     .footer {
-      /* display: inline-block; */
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 1px solid #C9C9C9;
+      border-left: 0px;
+      display: inline-block;
       width: 100%;
       max-width: 640px;
+      vertical-align: top;
+      padding: 30px;
     }
     .footer-row {
       width: 100%;
-      padding: 10px;
+      vertical-align: top;
+    }
+    .know-us {
+      max-width: 340px;
+    }
+    .social {
+      max-width: 230px;
+    }
+    .icon-col {
+      padding-right: 30px;
+    }
+    .privacy-unsub-links {
+      padding-top: 30px;
+      text-align: left;
+    }
+    a p.privacy,
+    a p.unsub,
+    p.line {
+      color: #002D3F;
+      display: inline;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .unsub,
+    .line {
+      padding-left: 10px;
+    }
+    .policy-footer {
+      padding-bottom: 10px;
+    }
+    .address,
+    .trademarks,
+    .membership,
+    .free-shipping {
+      font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+      font-size: 12px;
+      padding-bottom: 10px;
+      padding-top: 15px;
+      line-height: 18px;
+      color: #002d3f;
     }
     .hide {
       display: inline-block;
     }
-    @media screen and (max-width: 640px) {
-      .button {
-        margin-bottom: 10px;
-      }
+    @media screen and (max-width: 450px) {
       .right-col {
-      padding-left: 0px;
+        padding-top: 30px;
+        padding-left: 0px;
       }
-      .know-us {
+      .coupon {
+      color:#E35B67;
+      font-size: 18px;
+      font-weight:400;
+      }
+      .know-us,
+      .social {
+        width: 330px;
         margin: 0 auto;
+      }
+      .know-us-column,
+      .social-column,
+      .block {
+        width: 100% !important;
+        display: block !important;
       }
       .hide {
         display: none;
@@ -118,13 +180,13 @@
         <td>
           <table width="100%">
             <tr>
-              <td style="padding: 25px;">
+              <td style="padding: 20px 20px 30px 20px;">
                 <!-- LOGO -->
                 <img src="img/petsmart-logo.png" alt="Petsmart logo" width="130">
               </td>
               <td style="padding-right: 20px;text-align: right;">
                 <img src="img/petsmart-treats.png" alt="" class="header-heart">
-                <p style="font-size: 14px;font-weight: 700;color: #98999b;margin: 0;padding-top: 6px;text-align: right;">hi, Ciera</p>
+                <p style="font-size: 14px;font-weight: 700;color: #98999b;margin: 0;padding-top: 10px;text-align: right;">hi, Ciera</p>
               </td>
             </tr>
           </table>
@@ -151,7 +213,7 @@
             </tr>
             <tr>
               <td>
-                <table  style="text-align: center;" width="100%">
+                <table style="padding: 30px 0; text-align: center;" width="100%">
                   <tr>
                     <td class="two-columns">
                       <tr>
@@ -197,7 +259,7 @@
                 <table width="100%">
                   <tr>
                     <td style="padding: 15px;padding-top: 15px;text-align: center;">
-                      <p style="color:#E35B67;font-size: 18px;font-weight:300;">use promo code: EN-45R5DO7VX35H</p>
+                      <p class="coupon">use promo code: EN-45R5DO7VX35H</p>
                     </td>
                   </tr>
                 </table>
@@ -206,7 +268,6 @@
           </table><!-- end hero table -->
         </td>
       </tr>
-      
       <!-- 2 COL SHOPPING SECTION -->
       <tr>
         <td>
@@ -247,58 +308,78 @@
           </table>
         </td>
       </tr>
-
       <!-- FOOTER -->
       <tr>
         <td>
-          <table width="100%" class="footer">
+          <table width="100%" class="footer" align="top">
             <tr>
-              <td class="footer-row">
-                <table width="100%" style="max-width: 340px;" class="know-us">
-                  <tr>
-                    <td style="text-align: center;padding: 10px;">
-                      <p style="color: #00bced;font-weight: 700;font-size: 14px;">get to <br class="hide"> know us!</p>
-                    </td>
-                    <td style="text-align: center;">
-                      <img src="img/app-store.png" alt="" style="width: 96px;">
-                      <img src="img/g-play-store.png" alt="" style="width: 96px;">
-                      <p style="color: #002d3f;font-size: 14px;font-weight: 400;text-align: center;">download the <strong>FREE</strong> PetSmart app</p>
-                    </td>
-                  </tr>
-                </table>
-                <table style="float:right; width:230px;">
-                  <tr>
-                    <td width="33%" valign="middle" align="center">
-                      <img src="img/treats-footer.png" alt="" style="height: 30px;">
-                      <p>loyalty</p>
-                    </td>
-                    <td width="33%" valign="middle" align="center">
-                      <img src="img/social-instagram.png" alt="" style="height: 30px;">
-                      <p>social</p>
-                    </td>
-                    <td width="33%" valign="middle" align="center">
-                      <img src="img/location-pin.png" alt="" style="height: 30px;">
-                      <p>location</p>
-                    </td>
-                  </tr>
-                </table>
+              <td align="center" class="footer-row">
+                <tr>
+                  <td class="know-us-column">
+                    <table align="center" width="100%" class="know-us">
+                      <tr>
+                        <td class="block" style="text-align: center;">
+                          <p style="color: #00bced;font-weight: 700;font-size: 14px;">get to <br class="hide"> know us!</p>
+                        </td>
+                        <td class="block" style="text-align: center;">
+                          <img src="img/app-store.png" alt="" style="padding-right: 10px; width: 96px;">
+                          <img src="img/g-play-store.png" alt="" style="width: 96px;">
+                          <p style="color: #002d3f;font-size: 14px;font-weight: 400;padding-top: 10px; text-align: center;">download the <strong>FREE</strong> PetSmart app</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="social-column">
+                    <table align="center" class="social">
+                      <tr>
+                        <td width="33%" valign="middle" align="center" class="icon-col">
+                          <img src="img/treats-footer.png" alt="" style="height: 30px;">
+                          <p style="color: #002d3f; font-size: 14px; text-align: center; line-height: 20px; padding-top: 10px;">loyalty</p>
+                        </td>
+                        <td width="33%" valign="middle" align="center" class="icon-col icon">
+                          <img src="img/social-instagram.png" alt="" style="height: 30px;">
+                          <p style="color: #002d3f; font-size: 14px; text-align: center; line-height: 20px; padding-top: 10px;">social</p>
+                        </td>
+                        <td width="33%" valign="middle" align="center" class="icon-col">
+                          <img src="img/location-pin.png" alt="" style="height: 30px;">
+                          <p style="color: #002d3f; font-size: 14px; text-align: center; line-height: 20px; padding-top: 10px;">location</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr><!-- END FOOTER -->
+      <!-- SECTION -->
+      <tr>
+        <td>
+          <table width="100%" class="policy-footer" align="top">
+            <tr>
+              <td class="privacy-unsub-links">
+                <a hre="#"><p class="privacy">privacy policy</p></a>
+                <p class="line">|</p>
+                <a href="#"><p class="unsub">unsubcsribe</p></a>
+              </td>
+            </tr>
+          </table>
+          <table width="100%" class="fine-footer" align="top">
+            <tr>
+              <td>
+                <p class="address">PetSmart, 19601 N 27th Ave, Phoenix, AZ 85027, 888-839-9638.</p>
+
+                <p class="trademarks">All featured trademarks, service marks, and logos are the property of their respective owners. Prices and availability of products and services are subject to change without notice and selection may vary by location.</p>
+
+                <p class="membership">*Offer valid with Treats membership in stores through 12/23/2021 & online through 12/24/2021 by 7:30am EST. Transaction total is prior to taxes & after discounts are applied. While supplies last. Prices & selection may vary in stores & online. Pet age, health & vaccination requirements apply for services. Breed restrictions may apply. See coupon for in-store details. To use the online code, sign into your Treats account online & enter promo code at checkout.</p>
+
+                <p class="free-shipping">‡Offers valid through 1/30/2022 with Treats membership. Free Same-Day Delivery offer valid on select merchandise purchased at petsmart.com when choosing Same-Day Delivery. Order by 9am for delivery between 12pm-3pm, by 1pm for delivery between 3pm-6pm, & by 3pm for delivery between 6pm-8pm. Orders placed after 3pm will be fulfilled the next day. While delivery is contact-free, be sure to be home during your delivery window to bring any perishable items inside right away. Add'l terms apply. Click here for details. Curbside orders must be picked up two hours prior to store closing time. In store pickup available during all store hours. Store hours may vary. Add'l terms apply. For details, click here. Free standard shipping on orders over $49, prior to taxes & after discounts. Add'l terms apply. Click here for details. Save 35% on your first Autoship order up to a maximum savings of $20.00 & 5% on all recurring orders. Must be signed in to your Treats account to receive discount. Autoship Offer excludes prescription medications and pharmaceutical products purchased from The Pharmacy at PetSmart, select merchandise from various brands, services, gift cards, gift certificates, previous purchases, and charitable donations. Savings will automatically reflect in shopping cart with purchase of qualifying product and enrollment in Autoship. Offers may not be combinable with other promotional offers or discounts. Prices & selection may vary. While supplies last. Quantities may be limited and deliveries may be delayed.</p>
               </td>
             </tr>
           </table>
         </td>
       </tr>
-
-      <!-- SECTION -->
-      <tr>
-        <td>
-          <table>
-            <tr>
-              <td></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
     </table> <!-- END MAIN TABLE -->
   </center>
 </body>
